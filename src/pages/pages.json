@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "title": "Home",
+      "pathname": "/"
+    },
+    {
+      "title": "Accessories",
+      "pathname": "/accessories"
+    },
+    {
+      "title": "Denim",
+      "pathname": "/denim"
+    },
+    {
+      "title": "Footwear",
+      "pathname": "/footwear"
+    },
+    {
+      "title": "Jeans",
+      "pathname": "/jeans"
+    },
+    {
+      "title": "Outerwear",
+      "pathname": "/outerwear"
+    }
+  ]
+}
