@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   state = { onMobile: false }
@@ -15,15 +16,15 @@ class Navbar extends Component {
             </div>
           </div>
           <div className="navbar-end">
-            <a href="#" className="navbar-item">
+            <Link to="/cart" className="navbar-item">
               <span className="icon">
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
               </span>
               <span>Cart(0)</span>
-            </a>
-            <a href="#" className="navbar-item">
+            </Link>
+            <Link to="/cart" className="navbar-item">
               Check Out
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

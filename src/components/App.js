@@ -5,7 +5,8 @@ import { categories } from "../pages/pages.json";
 import Header from './Header';
 import SideNav from './SideNav';
 import Home from '../pages/home';
-import Product from '../pages/product';
+import Collection from '../pages/collection';
+import Cart from '../pages/cart'
 
 class App extends Component {
   state = { }
@@ -19,9 +20,10 @@ class App extends Component {
             <div className="columns">
               <SideNav />
               <Route exact path="/" component={Home} />
+              <Route exact path="/cart" component={Cart} />
               {
                 categories.slice(1).map(({ pathname }) =>
-                  <Route key={pathname} exact path={pathname} component={Product}/>
+                  <Route key={pathname} exact path={`/collections/${pathname}`} component={Collection}/>
                 )
               }
             </div>

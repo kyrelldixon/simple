@@ -9,11 +9,11 @@ class SideNav extends Component {
       <div className="column is-one-fifth">
         <aside className="menu">
           <p className="menu-label">
-            Categories
+            Collections
           </p>
           <ul className="menu-list">
             { categories.map( ({ title, pathname }) => 
-            <li key={title}><Link to={pathname}> {title} </Link></li>
+              <li key={title}><Link to={`/collections/${pathname}`}> {title} </Link></li>
             )}
           </ul>
         </aside>

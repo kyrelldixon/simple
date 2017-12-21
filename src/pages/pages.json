@@ -2,27 +2,27 @@
   "categories": [
     {
       "title": "Home",
-      "pathname": "/"
+      "pathname": ""
     },
     {
       "title": "Accessories",
-      "pathname": "/accessories"
+      "pathname": "accessories"
     },
     {
       "title": "Denim",
-      "pathname": "/denim"
+      "pathname": "denim"
     },
     {
       "title": "Footwear",
-      "pathname": "/footwear"
+      "pathname": "footwear"
     },
     {
       "title": "Jeans",
-      "pathname": "/jeans"
+      "pathname": "jeans"
     },
     {
       "title": "Outerwear",
-      "pathname": "/outerwear"
+      "pathname": "outerwear"
     }
   ]
 }
