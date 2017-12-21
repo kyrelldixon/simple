@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { categories } from "../pages/pages.json";
+import { pages } from "../pages/pages.json";
 
 import Header from './Header';
 import SideNav from './SideNav';
@@ -12,6 +12,8 @@ class App extends Component {
   state = { }
   
   render() {
+    const { collections } = pages[1];
+    console.log(pages);
     return (
       <BrowserRouter>
         <div className="container">
@@ -22,7 +24,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/cart" component={Cart} />
               {
-                categories.slice(1).map(({ pathname }) =>
+                collections.map(({ pathname }) =>
                   <Route key={pathname} exact path={`/collections/${pathname}`} component={Collection}/>
                 )
               }

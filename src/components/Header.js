@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import Navbar from './Navbar';
 
@@ -29,7 +30,9 @@ class Header extends Component {
       <div className="container">
         <Navbar />
         <LineBreak />
-        <Brand>Simple.</Brand>
+        <Link to="/">
+          <Brand>Simple.</Brand>
+        </Link>
       </div>
     );
   }
